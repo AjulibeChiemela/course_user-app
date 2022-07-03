@@ -22,11 +22,12 @@
       padding: 0.8rem 1rem;
     }
     p {
-      margin-bottom: 2rem;
+      margin-bottom: 4rem;
     }
     .btn {
-      position: relative;
-      right: -90%;
+      position: absolute;
+      right: 0.5rem;
+      bottom: 0.5rem;
     }
   }
 }
