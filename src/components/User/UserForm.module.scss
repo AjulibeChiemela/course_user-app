@@ -1,0 +1,21 @@
+.form {
+  div {
+    display: flex;
+    flex-direction: column;
+    label {
+      font-weight: 900;
+      margin-block: 0.5rem;
+    }
+    input {
+      height: 1.5rem;
+      border: 1px solid #ddd;
+      outline: none;
+      padding: 0.3rem;
+      font-weight: 500;
+      font-size: 1rem;
+      &:focus {
+        border-color: purple;
+      }
+    }
+  }
+}

@@ -1,0 +1,32 @@
+.invalid_modal_wrap {
+  height: 100vh;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  position: absolute;
+  top: 0;
+  left: 0;
+  .invalid_modal_card {
+    margin-top: 10%;
+    position: relative;
+    padding-top: 5.5rem;
+    width: 40%;
+    h2 {
+      color: white;
+      background-color: purple;
+      position: absolute;
+      border-radius: 10px 10px 0 0;
+      border: none;
+      top: 0;
+      left: 0;
+      width: 100%;
+      padding: 0.8rem 1rem;
+    }
+    p {
+      margin-bottom: 2rem;
+    }
+    .btn {
+      position: relative;
+      right: -90%;
+    }
+  }
+}
