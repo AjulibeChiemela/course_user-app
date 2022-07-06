@@ -1,8 +1,10 @@
 import React from "react";
+import ReactDOM from "react-dom";
 import Button from "../UI/Button";
 import Card from "../UI/Card";
 import styles from "./InvalidInput.module.scss";
-const InvalidInput = (props) => {
+
+const ModalContent = (props) => {
   return (
     <div className={styles.invalid_modal_wrap} onClick={props.onExitModal}>
       <Card className={styles.invalid_modal_card}>
@@ -17,6 +19,19 @@ const InvalidInput = (props) => {
         </Button>
       </Card>
     </div>
+  );
+};
+const InvalidInput = (props) => {
+  return (
+    <React.Fragment>
+      {ReactDOM.createPortal(
+        <ModalContent
+          validAge={props.validAge}
+          onExitModal={props.onExitModal}
+        />,
+        document.getElementById("modal-root")
+      )}
+    </React.Fragment>
   );
 };
 
